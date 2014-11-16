@@ -27,11 +27,11 @@ var wholeProgram = function() {
             } else if (result) {
                 console.log(result);
                 var deleted = exec('rm -rf images/*', function(err, stdout, stderr) {
-                  if (err) {
-                      console.log(err);
-                  } else {
-                      console.log("POST AND DELETE COMPLETED");
-                  }
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        console.log("POST AND DELETE COMPLETED");
+                    }
                 });
             }
         });
