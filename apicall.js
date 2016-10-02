@@ -4,10 +4,10 @@ var Twitter = require('node-twitter'),
 var wholeProgram = function() {
 
     var twitterRestClient = new Twitter.RestClient(
-        'Plt2Z3sk61MVZbmXtmEDllsWY',
-        'ZeFZWJTSvKgKkMj7lz2Gd3Zb9eIY9fltuxgcJfaNs60iDM0JoK',
-        '732958704-VUTQbbMnMGebm2WCnCqtUNNuvuxChtkDNg7afNke',
-        'ZBlufgfsW4ABCTZ2oqjXMRgoZc2Ejq8ekyuzq6ClR8eVz'
+        'CONSUMER_KEY',
+        'CONSUMER_SECRET',
+        'TOKEN',
+        'TOKEN_SECRET'
     );
 
     var child = exec('convert -colors 32 -layers optimize-transparency -resize 50% images/*.jpg images/mygif.gif', function(error, stdout, stderr) {
